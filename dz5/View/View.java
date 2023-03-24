@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class View {
     static Scanner in = new Scanner(System.in);
 
-    public int getValue(String title) {
+    public double getValue(String title) {
         System.out.printf("%s", title);
-        return in.nextInt();
+        return in.nextDouble();
     }
 
-    public void print(int data, String title) {
-        System.out.printf("%s %d\n", title, data);
+    public void print(double data, String title) {
+        System.out.printf("%s %s\n", title, data);
     }
 
     public static char getMark() {
