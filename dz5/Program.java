@@ -12,6 +12,8 @@ public class Program {
         Presenter m = new Presenter(new MultModel(), new View());
         Presenter d = new Presenter(new DivModel(), new View());
         Presenter su = new Presenter(new SubModel(), new View());
+        
+       while(true){
         switch (View.getMark()) {
             case '+':
                 s.buttonClick();
@@ -26,5 +28,8 @@ public class Program {
                 m.buttonClick();
                 break;
         }
+        System.out.println("--------");
+        continue;
+    }
     }
 }
